@@ -4,7 +4,25 @@ import { Observable } from "rxjs/Rx";
 @Injectable()
 export class MenuService {
 
-  menu = require('./menu.json');
+  menu = [
+    {
+      "title": "Demo",
+      "sub": [
+        {
+          "title": "REST",
+          "link": "posts"
+        },
+        {
+          "title": "Chat",
+          "link": "chat"
+        },
+        {
+          "title": "Form",
+          "link": "form"
+        }
+      ]
+    }
+  ];
 
   constructor() { }
 

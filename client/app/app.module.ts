@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { MaterialModule } from '@angular/material';
+import 'hammerjs';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
@@ -47,7 +49,8 @@ const ROUTES = [
     FormsModule,
     HttpModule,
     RouterModule.forRoot(ROUTES),
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    MaterialModule.forRoot(), // <--Add this
   ],
   providers: [MenuService, PostsService],
   bootstrap: [AppComponent]
