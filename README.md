@@ -20,7 +20,7 @@ npm install -g angular-cli
 
 Clone this repo into new project folder (e.g., `my-proj`):
 ```bash
-git clone https://github.com/cj-wang/mean-start my-proj
+git clone https://github.com/mean2-version1/mean2-v1.0.git my-proj
 cd my-proj
 ```
 
