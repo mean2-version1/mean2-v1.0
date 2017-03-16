@@ -5,44 +5,42 @@ import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
+import * as $ from 'jquery';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { MenuService } from './home/menu.service';
-
-import { PostsComponent } from './demo/posts/posts.component';
-import { PostsService } from './demo/posts/posts.service';
-import { ChatComponent } from './demo/chat/chat.component';
-import { HeroFormComponent } from './demo/form/hero-form.component';
+import { PortfolioHomeComponent } from './portfolio-home/portfolio-home.component';
+import { PortfolioAboutComponent } from './portfolio-about/portfolio-about.component';
+import { PortfolioExperienceComponent } from './portfolio-experience/portfolio-experience.component';
+import { PortfolioContactComponent } from './portfolio-contact/portfolio-contact.component';
 
 const ROUTES = [
   {
     path: '',
-    component: HomeComponent
+    component: PortfolioHomeComponent
   },
   {
-    path: 'posts',
-    component: PostsComponent
+    path: 'experience',
+    component: PortfolioExperienceComponent
   },
   {
-    path: 'chat',
-    component: ChatComponent
+    path: 'contact',
+    component: PortfolioContactComponent
   },
   {
-    path: 'form',
-    component: HeroFormComponent
+    path: 'about',
+    component: PortfolioAboutComponent
   }
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    PostsComponent,
-    ChatComponent,
-    HeroFormComponent
+    PortfolioHomeComponent,
+    PortfolioAboutComponent,
+    PortfolioExperienceComponent,
+    PortfolioContactComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +50,6 @@ const ROUTES = [
     NgbModule.forRoot(),
     MaterialModule.forRoot(), // <--Add this
   ],
-  providers: [MenuService, PostsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,21 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuService } from './home/menu.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent{
 
-  menu: any;
-
-  constructor(private menuService: MenuService) { }
-
-  ngOnInit() {
-    this.menuService.getMenu().subscribe(menu => {
-      this.menu = menu;
-    });
-  }
+  constructor() { }
 
 }
