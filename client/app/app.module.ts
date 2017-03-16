@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from '@angular/material';
+import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 import 'hammerjs';
 import * as $ from 'jquery';
 
@@ -14,6 +15,7 @@ import { PortfolioHomeComponent } from './portfolio-home/portfolio-home.componen
 import { PortfolioAboutComponent } from './portfolio-about/portfolio-about.component';
 import { PortfolioExperienceComponent } from './portfolio-experience/portfolio-experience.component';
 import { PortfolioContactComponent } from './portfolio-contact/portfolio-contact.component';
+
 
 const ROUTES = [
   {
@@ -40,7 +42,7 @@ const ROUTES = [
     PortfolioHomeComponent,
     PortfolioAboutComponent,
     PortfolioExperienceComponent,
-    PortfolioContactComponent
+    PortfolioContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,6 +51,9 @@ const ROUTES = [
     RouterModule.forRoot(ROUTES),
     NgbModule.forRoot(),
     MaterialModule.forRoot(), // <--Add this
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
   ],
   bootstrap: [AppComponent]
 })

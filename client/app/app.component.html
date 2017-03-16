@@ -1,17 +1,28 @@
-<h1 style="text-align: center;padding-bottom: 2em;">Shiva - Web Developer</h1>
-
-
+<div class="nav header">
+  <md-toolbar style="background: grey;box-shadow: 0 0 15px 0 black">
+    <div class="sideMenu" (click)="sidenav.toggle()">
+      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      </div>
+    <h4 style="text-align: left;padding: 0.5em">Shiva Karan - Web Developer</h4>
+  </md-toolbar>
+</div>
 <div class="container-fluid">
   <div class="row">
-    <div class="col-4" style="padding: 2em; border:6px solid #2196F3;">
-      <button type="button" routerLink="/" class="btn btn-primary btn-lg btn-block">Home</button>
-      <button type="button" routerLink="experience" class="btn btn-secondary btn-lg btn-block">My experience</button>
-      <button type="button" routerLink="about" class="btn btn-secondary btn-lg btn-block">About</button>
-      <button type="button" routerLink="contact" class="btn btn-secondary btn-lg btn-block">Contact us</button>
-    </div>
+    <div class="col-3" style="padding: 1em 0 0 0 ;">
+      <md-sidenav-container style="height:100%;width:210px">
+        <md-sidenav #sidenav mode="push" [opened]="false">
+          <ul>
+            <button md-button type="button" routerLink="/" class="btn btn-secondary btn-lg btn-block">Home</button>
+            <button md-button type="button" routerLink="experience" class="btn btn-secondary btn-lg btn-block">My experience</button>
+            <button md-button type="button" routerLink="about" class="btn btn-secondary btn-lg btn-block">About</button>
+            <button md-button type="button" routerLink="contact" class="btn btn-secondary btn-lg btn-block">Contact us</button>
+          </ul>
+        </md-sidenav>
+      </md-sidenav-container>
 
+    </div>
     <!-- Page content -->
-    <div class="col-8 container py-1">
+    <div class="col-9 container py-1">
       <router-outlet></router-outlet>
     </div>
   </div>
