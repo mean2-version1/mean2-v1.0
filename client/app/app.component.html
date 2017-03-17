@@ -8,26 +8,24 @@
   </md-toolbar>
 </div>
   <div class="row">
-    <div  style="padding: 0em 0 0 0 ;">
-      <md-sidenav-container style="height:100%;opacity: 0.5">
+      <md-sidenav-container style="height:100%;opacity: 0.5;position:absolute;z-index: 1">
         <md-sidenav #sidenav mode="side" [opened]="false">
           <ul style="padding-top:1em">
-            <button md-button type="button" routerLink="/" class="btn sidenav-btn btn-secondary btn-lg btn-block"><strong>Home</strong></button>
+            <button md-button type="button" routerLink="/" class="active btn sidenav-btn btn-secondary btn-lg btn-block"><strong>Home</strong></button>
             <button md-button type="button" routerLink="experience" class="btn btn-secondary btn-lg btn-block"><strong>Experience</strong></button>
             <button md-button type="button" routerLink="about" class="btn btn-secondary btn-lg btn-block"><strong>About</strong></button>
             <button md-button type="button" routerLink="contact" class="btn btn-secondary btn-lg btn-block"><strong>Contact Me</strong></button>
           </ul>
         </md-sidenav>
       </md-sidenav-container>
-
-    </div>
     <!-- Page content -->
-    <div class=" container py-1">
-      <router-outlet></router-outlet>
-    </div>
+    <div class="pageContent">
+      <router-outlet>
+      </router-outlet>
+      </div>
   </div>
 <!-- Sticky footer -->
-<footer class="footer" style="background-color:#DCDCDC;">
+<footer class="footer" style="background-color:#DCDCDC;position:absolute;z-index: 1">
   <div class="container font-weight-bold text-muted text-center">
     <span class="text-center">© 2017 Shiva Karan. All Rights Reserved</span>
   </div>

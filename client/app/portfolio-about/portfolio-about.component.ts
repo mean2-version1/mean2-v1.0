@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
+import { routerTransition } from '../router.animations';
 declare var jQuery: any;
 
 @Component({
   selector: 'app-portfolio-about',
   templateUrl: './portfolio-about.component.html',
-  styleUrls: ['./portfolio-about.component.css']
+  styleUrls: ['./portfolio-about.component.css'],
+  animations: [routerTransition()],
+  host: {'[@routerTransition]': ''}
 })
 export class PortfolioAboutComponent implements OnInit {
 
