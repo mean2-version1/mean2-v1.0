@@ -1,6 +1,5 @@
-<body>
 <div class="nav header">
-  <md-toolbar style="background: grey;box-shadow: 0 0 15px 0 black">
+  <md-toolbar style="background: grey;box-shadow: 0 0 15px 0 black;position: relative;z-index: 1">
     <div class="sideMenu" (click)="sidenav.toggle()">
       <i class="fa fa-bars" aria-hidden="true"></i>
       </div>
@@ -9,7 +8,7 @@
 </div>
   <div class="row">
       <md-sidenav-container style="height:100%;opacity: 0.5;position:absolute;z-index: 1">
-        <md-sidenav #sidenav mode="side" [opened]="false">
+        <md-sidenav #sidenav mode="side" [opened]="true">
           <ul style="padding-top:1em">
             <button md-button type="button" routerLink="/" class="active btn sidenav-btn btn-secondary btn-lg btn-block"><strong>Home</strong></button>
             <button md-button type="button" routerLink="experience" class="btn btn-secondary btn-lg btn-block"><strong>Experience</strong></button>
@@ -30,6 +29,5 @@
     <span class="text-center">© 2017 Shiva Karan. All Rights Reserved</span>
   </div>
 </footer>
-</body>
 
 

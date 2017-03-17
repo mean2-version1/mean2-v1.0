@@ -1,5 +1,13 @@
-.homeMain{
-  background-image: url("https://img2.brain4.photobox.com/09688346031ba831aab3a4f71c6152d62f4b34f5f778979a76802f0ad8cf3ffe2e4d264c.jpg");
-  background-size: cover;
-
+#homeMain{
+  background: transparent url(https://img2.brain4.photobox.com/09688346031ba831aab3a4f71c6152d62f4b34f5f778979a76802f0ad8cf3ffe2e4d264c.jpg) no-repeat center center fixed;
+ -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+    width: 100%;
 }

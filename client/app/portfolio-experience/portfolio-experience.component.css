@@ -1,0 +1,52 @@
+#featuredPages {
+    background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                      url(https://img2.brain4.photobox.com/854504954b210f9785c3e354edaa1513c8ae23da1860074331fd9ba2816298aa47d00a89.jpg) no-repeat center center fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+}
+#featuredPages.hasBackground .sectionHead h3 {
+    color: #fff;
+}
+.homeSection .sectionHead h3 {
+    font-family: "brandon-grotesque", sans-serif;
+}
+
+#featuredPages.hasBackground p {
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.7);
+}
+#featuredPages.hasBackground img {
+    margin: 0 auto 10px;
+}
+style.css?ver=4.7.3:1053
+#featuredPages img {
+    max-width: 100% !important;
+    height: auto;
+    margin: 0 auto;
+}
+
+style.css?ver=4.7.3:1033
+#featuredPages {
+    background: #f9f9f9;
+    padding: 150px 0 120px 0;
+    width: 100%;
+    max-width: none;
+}
+
+.homeSection .sectionHead {
+    padding: 0 0 15px!important;
+    margin: 0 30px 30px;
+    text-align: center;
+    position: relative;
+}
