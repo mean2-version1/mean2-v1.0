@@ -1,30 +1,37 @@
+<body>
 <div class="nav header">
   <md-toolbar style="background: grey;box-shadow: 0 0 15px 0 black">
     <div class="sideMenu" (click)="sidenav.toggle()">
-      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      <i class="fa fa-bars" aria-hidden="true"></i>
       </div>
-    <h4 style="text-align: left;padding: 0.5em">Shiva Karan - Web Developer</h4>
+    <h4 style="text-align: left;padding: 1em">Shiva Karan - Web Developer</h4>
   </md-toolbar>
 </div>
-<div class="container-fluid">
   <div class="row">
-    <div class="col-3" style="padding: 1em 0 0 0 ;">
-      <md-sidenav-container style="height:100%;width:210px">
-        <md-sidenav #sidenav mode="push" [opened]="false">
-          <ul>
-            <button md-button type="button" routerLink="/" class="btn btn-secondary btn-lg btn-block">Home</button>
-            <button md-button type="button" routerLink="experience" class="btn btn-secondary btn-lg btn-block">My experience</button>
-            <button md-button type="button" routerLink="about" class="btn btn-secondary btn-lg btn-block">About</button>
-            <button md-button type="button" routerLink="contact" class="btn btn-secondary btn-lg btn-block">Contact us</button>
+    <div  style="padding: 0em 0 0 0 ;">
+      <md-sidenav-container style="height:100%;opacity: 0.5">
+        <md-sidenav #sidenav mode="side" [opened]="false">
+          <ul style="padding-top:1em">
+            <button md-button type="button" routerLink="/" class="btn sidenav-btn btn-secondary btn-lg btn-block"><strong>Home</strong></button>
+            <button md-button type="button" routerLink="experience" class="btn btn-secondary btn-lg btn-block"><strong>Experience</strong></button>
+            <button md-button type="button" routerLink="about" class="btn btn-secondary btn-lg btn-block"><strong>About</strong></button>
+            <button md-button type="button" routerLink="contact" class="btn btn-secondary btn-lg btn-block"><strong>Contact Me</strong></button>
           </ul>
         </md-sidenav>
       </md-sidenav-container>
 
     </div>
     <!-- Page content -->
-    <div class="col-9 container py-1">
+    <div class=" container py-1">
       <router-outlet></router-outlet>
     </div>
   </div>
-</div>
+<!-- Sticky footer -->
+<footer class="footer" style="background-color:#DCDCDC;">
+  <div class="container font-weight-bold text-muted text-center">
+    <span class="text-center">© 2017 Shiva Karan. All Rights Reserved</span>
+  </div>
+</footer>
+</body>
+
 
