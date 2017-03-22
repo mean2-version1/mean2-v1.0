@@ -1,82 +1,90 @@
-body {
-  font-family: 'Ubuntu', sans-serif;
-  width:960px;
+.expMain{
+    background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                      url(https://img2.brain4.photobox.com/854504954b210f9785c3e354edaa1513c8ae23da1860074331fd9ba2816298aa47d00a89.jpg) no-repeat center center fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    margin: 0;
+}
+#featuredPages.hasBackground .sectionHead h3 {
+    color: #fff;
+}
+.homeSection .sectionHead h3 {
+    font-family: "brandon-grotesque", sans-serif;
 }
 
-p{
-  color:#525252;
-  font-size:12px;
+#featuredPages.hasBackground p {
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.7);
+}
+#featuredPages.hasBackground img {
+    margin: 0 auto 10px;
 }
 
-.skillbar {
-  position:relative;
-  display:block;
-  margin-bottom:15px;
-  width:100%;
-  background:#eee;
-  height:35px;
-  border-radius:3px;
-  -moz-border-radius:3px;
-  -webkit-border-radius:3px;
-  -webkit-transition:0.4s linear;
-  -moz-transition:0.4s linear;
-  -ms-transition:0.4s linear;
-  -o-transition:0.4s linear;
-  transition:0.4s linear;
-  -webkit-transition-property:width, background-color;
-  -moz-transition-property:width, background-color;
-  -ms-transition-property:width, background-color;
-  -o-transition-property:width, background-color;
-  transition-property:width, background-color;
+#featuredPages img {
+    max-width: 100% !important;
+    height: auto;
+    margin: 0 auto;
 }
 
-.skillbar-title {
-  position:absolute;
-  top:0;
-  left:0;
-  width:110px;
-  font-weight:bold;
-  font-size:13px;
-  color:#ffffff;
-  background:#6adcfa;
-  -webkit-border-top-left-radius:3px;
-  -webkit-border-bottom-left-radius:4px;
-  -moz-border-radius-topleft:3px;
-  -moz-border-radius-bottomleft:3px;
-  border-top-left-radius:3px;
-  border-bottom-left-radius:3px;
+style.css?ver=4.7.3:1033
+#featuredPages {
+    background: #f9f9f9;
+    padding: 150px 0 120px 0;
+    width: 100%;
+    max-width: none;
 }
 
-.skillbar-title span {
-  display:block;
-  background:rgba(0, 0, 0, 0.1);
-  padding:0 20px;
-  height:35px;
-  line-height:35px;
-  -webkit-border-top-left-radius:3px;
-  -webkit-border-bottom-left-radius:3px;
-  -moz-border-radius-topleft:3px;
-  -moz-border-radius-bottomleft:3px;
-  border-top-left-radius:3px;
-  border-bottom-left-radius:3px;
+.homeSection .sectionHead {
+    padding: 0 0 15px!important;
+    margin: 0 30px 30px;
+    text-align: center;
+    position: relative;
 }
 
-.skillbar-bar {
-  height:35px;
-  width:0px;
-  background:#6adcfa;
-  border-radius:3px;
-  -moz-border-radius:3px;
-  -webkit-border-radius:3px;
+
+#downButton {
+    background: transparent url(https://i.imgur.com/k5aPd9S.png) center center no-repeat;
+    background-size: 70px 37px !important;
+    border-radius: 30px;
+    width: 70px;
+    height: 37px;
+    position: absolute;
+    bottom: 75px;
+    z-index: 99;
+    text-indent: -9999 !important;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: left !important;
+    cursor: pointer;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    opacity: .7;
+}
+#downButton:hover{
+    opacity: 1;
 }
 
-.skill-bar-percent {
-  position:absolute;
-  right:10px;
-  top:0;
-  font-size:11px;
-  height:35px;
-  line-height:35px;
-  color:#ffffff;
-  color:rgba(0, 0, 0, 0.4);
+.title{
+    color:#fff;
+    margin-left: 2em;
 }
+
+.wp-post-image{
+    margin-left: 4em !important;
+}
+
