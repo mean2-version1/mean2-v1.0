@@ -1,6 +1,3 @@
-
-
-
 body {
   font-family: 'Ubuntu', sans-serif;
   width:960px;
@@ -12,6 +9,7 @@ p{
 }
 
 .skillbar {
+
   position:relative;
   display:block;
   margin-bottom:15px;
@@ -86,7 +84,10 @@ p{
 
 .skillsContainer{
   /*background: transparent url(https://i.imgur.com/QdT9vGw.png) no-repeat fixed;*/
-  background: transparent url(https://i.imgur.com/38wFbWo.jpg) no-repeat fixed;
+  background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)), transparent url(https://i.imgur.com/5pq7Nat.png) no-repeat fixed;
+  background-color: 	#00FFFF;
  -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -94,4 +95,32 @@ p{
     background-position: center bottom;
     overflow: hidden;
     width: 100%;
+}
+
+
+#downButton {
+    background: transparent url(https://i.imgur.com/k5aPd9S.png) center center no-repeat;
+    background-size: 70px 37px !important;
+    border-radius: 30px;
+    width: 70px;
+    height: 37px;
+    position: absolute;
+    bottom: 75px;
+    z-index: 99;
+    text-indent: -9999 !important;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: left !important;
+    cursor: pointer;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    opacity: .7;
+}
+#downButton:hover{
+    opacity: 1;
 }
