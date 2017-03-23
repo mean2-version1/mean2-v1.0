@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+.aboutTxt{
+  font-family: 'PT Sans Narrow', sans-serif;
+}
 body {
   font-family: 'Ubuntu', sans-serif;
   width:960px;
@@ -70,7 +74,34 @@ p{
   -moz-border-radius:3px;
   -webkit-border-radius:3px;
 }
+.skill-html{
 
+  background-color: #b0dbd6;background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #5fb2a8), color-stop(1, #b0dbd6));
+}
+.skill-css{
+    background-color: #f4dcd6;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e1ae9e), color-stop(1, #f4dcd6));
+}
+.skill-js{
+background-color: #6b7784;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #415161), color-stop(1, #6b7784));
+}
+.skill-aj{
+    background-color: #da9284;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ae7469), color-stop(1, #da9284));
+}
+.skill-nj{
+    background-color: #da6d6c;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e14949), color-stop(1, #da6d6c));
+}
+.skill-jq{
+    background-color:#135730;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #239c56), color-stop(1, #7dce9f));
+}
+.skill-rwd{
+    background-color: #4171a3;
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #3a7492), color-stop(1, #668db5));
+}
 .skill-bar-percent {
   position:absolute;
   right:10px;
@@ -83,10 +114,15 @@ p{
 }
 
 .skillsContainer{
-  /*background: transparent url(https://i.imgur.com/QdT9vGw.png) no-repeat fixed;*/
-  background: linear-gradient(
+  /*background: linear-gradient(
                      rgba(20,20,20, .5), 
-                     rgba(20,20,20, .5)), transparent url(https://i.imgur.com/5pq7Nat.png) no-repeat fixed;
+                     rgba(20,20,20, .5)), transparent url(https://i.imgur.com/5pq7Nat.png) no-repeat fixed;*/
+background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)), transparent url(https://i.imgur.com/c404SMR.png) no-repeat fixed; 
+/*background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)), transparent url(https://i.imgur.com/JzIuMS2.png) no-repeat fixed;                  */*/
   background-color: 	#00FFFF;
  -webkit-background-size: 100%;
     -moz-background-size: 100%;

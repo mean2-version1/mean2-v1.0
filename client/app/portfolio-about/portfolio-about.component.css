@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
+
 .expMain{
     background: linear-gradient(
-                     rgba(20,20,20, .5), 
-                     rgba(20,20,20, .5)),
-                      url(https://img2.brain4.photobox.com/854504954b210f9785c3e354edaa1513c8ae23da1860074331fd9ba2816298aa47d00a89.jpg) no-repeat center center fixed;
+                     rgba(5,5,5, .5), 
+                     rgba(5,5,5, .5)),
+                      url(https://i.imgur.com/YZe41r3.png) no-repeat center center fixed;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -19,7 +22,7 @@
     color: #fff;
 }
 .homeSection .sectionHead h3 {
-    font-family: "brandon-grotesque", sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 #featuredPages.hasBackground p {
@@ -49,6 +52,7 @@ style.css?ver=4.7.3:1033
     margin: 0 30px 30px;
     text-align: center;
     position: relative;
+    
 }
 
 
@@ -82,8 +86,11 @@ style.css?ver=4.7.3:1033
 .title{
     color:#fff;
     margin-left: 2em;
+font-family: 'Raleway', sans-serif;
 }
-
+.inside p{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
 .wp-post-image{
     margin-left: 4em !important;
 }
