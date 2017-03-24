@@ -88,7 +88,7 @@ background-color: #6b7784;
 }
 .skill-aj{
     background-color: #da9284;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ae7469), color-stop(1, #da9284));
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #ae7469), color-stop(1, #dd9c90));
 }
 .skill-nj{
     background-color: #da6d6c;
@@ -117,9 +117,12 @@ background-color: #6b7784;
   /*background: linear-gradient(
                      rgba(20,20,20, .5), 
                      rgba(20,20,20, .5)), transparent url(https://i.imgur.com/5pq7Nat.png) no-repeat fixed;*/
+/*background: linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)), transparent url(https://i.imgur.com/c404SMR.png) no-repeat fixed; */
 background: linear-gradient(
                      rgba(20,20,20, .5), 
-                     rgba(20,20,20, .5)), transparent url(https://i.imgur.com/c404SMR.png) no-repeat fixed; 
+                     rgba(20,20,20, .5)), transparent url(https://i.imgur.com/38wFbWo.jpg) no-repeat fixed;                     
 /*background: linear-gradient(
                      rgba(20,20,20, .5), 
                      rgba(20,20,20, .5)), transparent url(https://i.imgur.com/JzIuMS2.png) no-repeat fixed;                  */*/
