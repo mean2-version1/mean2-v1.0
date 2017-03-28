@@ -114,19 +114,10 @@ background-color: #6b7784;
 }
 
 .skillsContainer{
-  /*background: linear-gradient(
-                     rgba(20,20,20, .5), 
-                     rgba(20,20,20, .5)), transparent url(https://i.imgur.com/5pq7Nat.png) no-repeat fixed;*/
-/*background: linear-gradient(
-                     rgba(20,20,20, .5), 
-                     rgba(20,20,20, .5)), transparent url(https://i.imgur.com/c404SMR.png) no-repeat fixed; */
+
 background: linear-gradient(
                      rgba(20,20,20, .5), 
-                     rgba(20,20,20, .5)), transparent url(https://i.imgur.com/38wFbWo.jpg) no-repeat fixed;                     
-/*background: linear-gradient(
-                     rgba(20,20,20, .5), 
-                     rgba(20,20,20, .5)), transparent url(https://i.imgur.com/JzIuMS2.png) no-repeat fixed;                  */*/
-  background-color: 	#00FFFF;
+                     rgba(20,20,20, .5)), transparent url(https://i.imgur.com/AIgsIpr.jpg) no-repeat fixed;                     
  -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;

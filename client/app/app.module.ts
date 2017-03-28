@@ -2,9 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router';
+import { RouterModule,Routes } from '@angular/router';
 import { MaterialModule } from '@angular/material';
 import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 import 'hammerjs';
 import * as $ from 'jquery';
 
@@ -17,7 +18,7 @@ import { PortfolioExperienceComponent } from './portfolio-experience/portfolio-e
 import { PortfolioContactComponent } from './portfolio-contact/portfolio-contact.component';
 
 
-const ROUTES = [
+const appRoutes: Routes = [
   {
     path: '',
     component: PortfolioHomeComponent
@@ -33,7 +34,7 @@ const ROUTES = [
   {
     path: 'about',
     component: PortfolioAboutComponent
-  }
+  },
 ];
 
 @NgModule({
@@ -48,13 +49,15 @@ const ROUTES = [
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule.forRoot(ROUTES),
+    RouterModule.forRoot(appRoutes),
     NgbModule.forRoot(),
     MaterialModule.forRoot(), // <--Add this
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}]
+
 })
 export class AppModule { }
