@@ -25,24 +25,26 @@
 }
 .homeSection .sectionHead h3 {
   font-family: 'Raleway', sans-serif;
+  font-size: 30px;
 }
 
 #featuredPages.hasBackground p {
-    font-size: 1.2em;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.7);
 }
 #featuredPages.hasBackground img {
-    margin: 0 auto 10px;
+    margin: 0 auto 10px 30px;
 }
 
 #featuredPages img {
     max-width: 100% !important;
     height: auto;
     margin: 0 auto;
+
 }
 
 .homeSection .sectionHead {
-    padding: 0 0 15px!important;
+    padding: 0 0 75px;
     margin: 0 30px 30px;
     text-align: center;
     position: relative;
@@ -81,13 +83,14 @@
     color:#fff;
     margin-left: 2em;
 font-family: 'Raleway', sans-serif;
+font-size:25px;
 }
 .inside p{
     font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 15px !important;
+    font-size: 20px !important;
 }
 .wp-post-image{
-    margin-left: 4em !important;
+    margin-left: 7em !important;
 }
 
 @media only screen 
@@ -97,8 +100,23 @@ font-family: 'Raleway', sans-serif;
 .inside p{
         font-size: 10px !important;
 }
+.title{
+    font-size: 13px !important;
+    margin-left:4em !important;
+}
 img{
     height:30px;
     width:30px;
+}
+#featuredPages.hasBackground p {
+font-size: 13px !important;
+}
+.homeSection .sectionHead h3{
+font-size:15px !important;
+}
+.homeSection .sectionHead {
+    padding: 0px !important;
+    margin: 0 30px 20px !important;
+    
 }
 }
