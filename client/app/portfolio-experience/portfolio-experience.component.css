@@ -165,4 +165,7 @@ background: linear-gradient(
 .mainText{
   padding: 2em !important;
 }
+.aboutTxt{
+  font-size: 1.5rem;
+}
 }
