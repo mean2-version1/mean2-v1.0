@@ -41,14 +41,6 @@
     margin: 0 auto;
 }
 
-style.css?ver=4.7.3:1033
-#featuredPages {
-    background: #f9f9f9;
-    padding: 150px 0 120px 0;
-    width: 100%;
-    max-width: none;
-}
-
 .homeSection .sectionHead {
     padding: 0 0 15px!important;
     margin: 0 30px 30px;
@@ -92,6 +84,7 @@ font-family: 'Raleway', sans-serif;
 }
 .inside p{
     font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 15px !important;
 }
 .wp-post-image{
     margin-left: 4em !important;
@@ -99,9 +92,13 @@ font-family: 'Raleway', sans-serif;
 
 @media only screen 
   and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
+  and (max-device-width: 800px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
-.creative{
-    
+.inside p{
+        font-size: 10px !important;
+}
+img{
+    height:30px;
+    width:30px;
 }
 }

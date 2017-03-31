@@ -58,6 +58,7 @@
     "jquery": "^3.1.1",
     "mongoose": "^4.7.2",
     "morgan": "^1.7.0",
+    "ng2-bootstrap": "^1.4.2",
     "pm2": "^2.4.0",
     "request": "^2.79.0",
     "require-all": "^2.1.0",

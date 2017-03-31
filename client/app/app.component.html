@@ -8,11 +8,11 @@
   </md-toolbar>
 </div>
   <div class="row">
-      <md-sidenav-container style="height:100%;opacity: 0.5;position:absolute;z-index: 1">
+      <md-sidenav-container class="sidenav-Container" style="height:100%;opacity: 0.5;position:absolute;z-index: 1">
         <md-sidenav #sidenav mode="side" [opened]="false">
           <ul style="padding-top:10em">
-             <i class="fa fa-times" aria-hidden="true" (click)="sidenav.close()" style="cursor: pointer;position: relative;bottom: 100px;left:90px"></i>
-            <button md-button type="button" routerLink="/"  routerLinkActive="active" class="btn sidenav-btn btn-secondary btn-lg btn-block"><strong>Home</strong></button>
+             <i class="fa fa-times fa-2x" aria-hidden="true" (click)="sidenav.close()" style="cursor: pointer;position: relative;bottom: 30px;left:90px"></i>
+            <button md-button type="button" routerLink="/"  class="btn sidenav-btn btn-secondary btn-lg btn-block"><strong>Home</strong></button>
             <button md-button type="button" routerLink="/about"  routerLinkActive="active" class="btn btn-secondary btn-lg btn-block"><strong>About</strong></button>
             <button md-button type="button" routerLink="/experience"  routerLinkActive="active" class="btn btn-secondary btn-lg btn-block"><strong>Experience</strong></button>
             <button md-button type="button" routerLink="/contact"  routerLinkActive="active"class="btn btn-secondary btn-lg btn-block"><strong>Contact Me</strong></button>

@@ -154,3 +154,15 @@ background: linear-gradient(
 #downButton:hover{
     opacity: 1;
 }
+
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 800px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+.skillSet{
+        padding:0 !important;
+}
+.mainText{
+  padding: 2em !important;
+}
+}

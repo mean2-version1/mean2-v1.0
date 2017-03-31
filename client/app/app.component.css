@@ -6,4 +6,14 @@
 }
 .btn-secondary:focus{
   background-color: grey;
+  outline: none;
+}
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 800px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+.sidenav-Container{
+  position:relative !important;
+  padding-top: 500px;
+  }
 }

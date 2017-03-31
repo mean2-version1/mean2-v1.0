@@ -9,8 +9,6 @@ import {HashLocationStrategy, LocationStrategy} from '@angular/common';
 import 'hammerjs';
 import * as $ from 'jquery';
 
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
 import { AppComponent } from './app.component';
 import { PortfolioHomeComponent } from './portfolio-home/portfolio-home.component';
 import { PortfolioAboutComponent } from './portfolio-about/portfolio-about.component';
@@ -50,7 +48,6 @@ const appRoutes: Routes = [
     FormsModule,
     HttpModule,
     RouterModule.forRoot(appRoutes),
-    NgbModule.forRoot(),
     MaterialModule.forRoot(), // <--Add this
   ],
   schemas: [
